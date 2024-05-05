@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Рик о Морти</title>
+    <style>
+        .characters {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .character {
+            width: 100%;
+    </style>
+</head>
+<body>
+<div th:switch="${results}">
+    <h2 th:case="null">No characters found!</h2>
+    <div th:case="*">
+        <th:block th:each="result : ${results}">
+            <tr>
+                <td>
+                    <img th:src="${result.image}" alt="" class="avatar">
+                    <p class="name" th:text="${result.name}"></p>
+                    <p class="age" th:text="${result.gender}"></p>
+                    <p class="age" th:text="${result.species}"></p>
+                    <p class="age" th:text="${result.type}"></p>
+                    <p class="status" th:text="${result.status}"></p>
+                </td>
+            </tr>
+        </th:block>
+    </div>
+</div>
+</body>
+</html>
