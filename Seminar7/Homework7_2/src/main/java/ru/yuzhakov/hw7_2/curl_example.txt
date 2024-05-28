@@ -1,0 +1,1 @@
+curl -H "Authorization: BearereyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9VU0VSIiwiaWQiOjIsImVtYWlsIjoieXV6aGFrb3ZtaWhhaWxAeWFuZGV4LnJ1Iiwic3ViIjoieXV6aGFrb3ZtaWhhaWwiLCJpYXQiOjE3MTU1MDg5MDksImV4cCI6MTcxNTY1MjkwOX0.KjtHskfTGi3-QZ5xMNz-VFngxKAB_KuFJMrXMg2V7IU" http://localhost:8080/example
