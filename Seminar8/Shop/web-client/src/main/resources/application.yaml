@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: client
+
+api:
+  storage:
+    basicUri: http://localhost:8765/storage
+  payment:
+    basicUri: http://localhost:8765/payment
+
+shop:
+  account:
+    number: 3
